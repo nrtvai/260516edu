@@ -20,8 +20,9 @@
       <nav class="desktop-nav" aria-label="발표 섹션">
         <a href="#solution">솔루션</a>
         <a href="#playbook">실전법</a>
-        <a href="#models">서비스</a>
-        <a href="#agents">에이전트</a>
+        <a href="#models">모델</a>
+        <a href="#services">서비스</a>
+        <a href="#agent-tools">툴</a>
         <a href="#security">보안</a>
       </nav>
     </header>
@@ -170,38 +171,87 @@
         </div>
       </section>
 
-      <section id="models" class="snap-section models-section">
+      <section id="models" class="snap-section review-section models-section">
         <div class="section-number">05</div>
         <div class="section-copy">
-          <h2>서비스 비교는 공식 사실과 사용감을 분리해서 보세요.</h2>
-          <p>2026-05-16 기준. 아래 평가는 강한 주관 그대로입니다. 싸우자는 게 아니라 빨리 고르자는 겁니다.</p>
+          <h2>모델 리뷰</h2>
         </div>
-        <div class="model-table" role="table" aria-label="서비스와 모델 비교">
-          <div class="row head" role="row">
-            <span data-label="도구">도구</span>
-            <span data-label="공식 사실">공식 사실</span>
-            <span data-label="현장 사용감">현장 사용감</span>
-          </div>
-          <div class="row" role="row">
-            <span data-label="도구">ChatGPT / GPT‑5.5</span>
-            <span data-label="공식 사실">ChatGPT와 Codex에서 사용 가능. 코딩, 리서치, 데이터, 문서 작업에 강함.</span>
-            <span data-label="현장 사용감">만능. 비싸지만 돈값 함. 이미지와 음성 대화도 현재 제일 무난하게 좋음.</span>
-          </div>
-          <div class="row" role="row">
-            <span data-label="도구">Claude / Opus 4.7</span>
-            <span data-label="공식 사실">코딩, 에이전트, 긴 작업, 고해상도 이미지 이해를 강화한 모델.</span>
-            <span data-label="현장 사용감">비싼데 자주 답답함. 그래도 개발할 때 개떡같이 말해도 알아듣는 편이라 많이 씀.</span>
-          </div>
-          <div class="row" role="row">
-            <span data-label="도구">Gemini / 3.1 Pro</span>
-            <span data-label="공식 사실">Google의 고급 멀티모달 추론 모델. Workspace와 결합이 강함.</span>
-            <span data-label="현장 사용감">글을 잘 쓰고 말맛이 좋음. Google Workspace 쓰면 추가 지출 없이 시작하기 좋음.</span>
-          </div>
+        <div class="review-list model-review" aria-label="모델 리뷰">
+          <article>
+            <h3>OpenAI GPT-5.5</h3>
+            <p>현재 최강. 코딩도 잘하고 글도 잘씀. 비쌈.</p>
+          </article>
+          <article>
+            <h3>Claude Opus 4.7</h3>
+            <p>4.6 대비 멍청해짐. 비쌈. 가끔 뻗음. 전두엽을 절제한 느낌.</p>
+          </article>
+          <article>
+            <h3>Gemini Pro 3.1</h3>
+            <p>글 잘씀. 개발도 어느 정도 함.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="snap-section review-section services-section">
+        <div class="section-number">06</div>
+        <div class="section-copy">
+          <h2>서비스 리뷰</h2>
+        </div>
+        <div class="review-list service-review" aria-label="서비스 리뷰">
+          <article>
+            <h3>ChatGPT</h3>
+            <p>글, 그림, 코딩 (Codex), 다른 앱 연동 등 종합적으로 현재 최강</p>
+          </article>
+          <article>
+            <h3>Claude</h3>
+            <p>클로드 코드와 업무용 앱 연동이 좋긴 하지만, 입문 이후엔 ChatGPT가 좋음</p>
+          </article>
+          <article>
+            <h3>Gemini</h3>
+            <p>글, 개발, 그림, 영상, 음악, 디자인 다 잘 함. 며칠 뒤 새 모델 나오면 클로드보다 나아질 수도 있음. 딥리서치 기능이 좋음.</p>
+          </article>
+          <article>
+            <h3>Grok</h3>
+            <p>Gemini와 거의 비슷하나 검열이 적고 X(트위터) 데이터를 잘 뽑음.</p>
+          </article>
+          <article>
+            <h3>Perplexity</h3>
+            <p>딥리서치를 돌리긴 시간이 아까울 수 있지만 진짜 검색 결과를 종합해서 답을 얻기에 좋음.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="agent-tools" class="snap-section review-section agent-tools-section">
+        <div class="section-number">07</div>
+        <div class="section-copy">
+          <h2>에이전트 툴 리뷰</h2>
+        </div>
+        <div class="review-list tool-review" aria-label="에이전트 툴 리뷰">
+          <article>
+            <h3>Claude Code</h3>
+            <p>26년 1분기까지 개발 생태계 진화를 이끌던 툴. 여러 업무에 쓰기 쉽고, 안정적인 결과를 얻을 수 있으나 가성비가 떨어짐. 아직까진 외부 툴들이 거의 대부분 클로드 코드용으로 만들어지고 있음. 폐쇄적인 운영 정책으로 팬들이 떠나가는 중.</p>
+          </article>
+          <article>
+            <h3>Codex</h3>
+            <p>ChatGPT가 2분기에 열심히 밀고 있음. 마찬가지로 여러 업무와 연동되며, 클로드보다는 가성비가 좋음. 현재 많은 사람들이 클로드코드에서 코덱스로 이동 중. 개방적인 운영 정책으로 신규 유저들이 대거 유입 중.</p>
+          </article>
+          <article>
+            <h3>Antigravity</h3>
+            <p>지메일 / 구글 워크스페이스 / 구글 드라이브 추가 용량 구독 중이면 쓸 수 있음. 조금 더 개발자 도구처럼 보이지만 간단한 업무들은 문제 없이 해결 가능.</p>
+          </article>
+          <article>
+            <h3>OpenClaw</h3>
+            <p>왜 쓰는지 잘 모르겠음. 개인 비서라고 하기엔 너무 멍청함.</p>
+          </article>
+          <article>
+            <h3>Hermes Agent</h3>
+            <p>최근 가장 핫함. 후에 데모 시연.</p>
+          </article>
         </div>
       </section>
 
       <section id="limits" class="snap-section limits-section">
-        <div class="section-number">06</div>
+        <div class="section-number">08</div>
         <div class="section-copy">
           <h2>채팅으로만 쓰면 여기서 막힙니다.</h2>
           <p>채팅은 답변을 줍니다. 에이전트는 파일을 만들고, 실행하고, 실패하면 고치고, 다시 확인합니다.</p>
@@ -227,7 +277,7 @@
       </section>
 
       <section id="automation" class="snap-section automation-section">
-        <div class="section-number">07</div>
+        <div class="section-number">09</div>
         <div class="section-copy">
           <h2>설문 답변 중 실제로 에이전트화할 수 있는 것들</h2>
           <p>기안, 비교견적, 보고서, 시장조사, 데이터 정리, 엑셀 서식, 영어 메일 후속조치. 전부 “반복 가능한 업무 단위”로 바꿀 수 있습니다.</p>
@@ -267,7 +317,7 @@
       </section>
 
       <section id="security" class="snap-section security-section">
-        <div class="section-number">08</div>
+        <div class="section-number">10</div>
         <div class="section-copy">
           <h2>기업용 계정이어도, 미숙한 사용은 위험합니다.</h2>
           <p>

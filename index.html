@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>260516edu | AI는 채팅창 밖에서 시작된다</title>
+    <meta
+      name="description"
+      content="20분 키노트형 AI 교육 자료. 모바일 핸드아웃과 랩탑 발표 화면에 맞춘 반응형 웹자료입니다."
+    >
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1118'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='20' font-weight='800' fill='white'%3E1%25%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="처음으로 이동">
+        <span class="brand-mark">1%</span>
+        <span>AI 업무전환 키노트</span>
+      </a>
+      <nav class="desktop-nav" aria-label="발표 섹션">
+        <a href="#solution">솔루션</a>
+        <a href="#playbook">실전법</a>
+        <a href="#models">서비스</a>
+        <a href="#agents">에이전트</a>
+        <a href="#security">보안</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero snap-section">
+        <div class="hero-copy">
+          <p class="run-time">20분 키노트 · 소규모 실무 교육</p>
+          <h1>AI를 잘 쓰는 핵심은 질문을 잘하는 게 아니라, 상황을 다 털어놓는 겁니다.</h1>
+          <p>
+            결론부터 갑니다. 채팅창에 한 줄씩 예쁘게 질문하는 건 AI 서비스의 1%만 쓰는 방식입니다.
+            마이크로 맥락을 쏟아내고, 기준을 만들고, 에이전트에게 실행시켜야 업무가 실제로 줄어듭니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#solution">솔루션부터 보기</a>
+            <a class="button ghost" href="#handout">모바일 핸드아웃</a>
+          </div>
+        </div>
+        <aside class="hero-board" aria-label="핵심 메시지">
+          <div class="board-line">
+            <span>채팅 AI</span>
+            <strong>1%</strong>
+          </div>
+          <div class="board-line">
+            <span>프롬프트 기준화</span>
+            <strong>10%</strong>
+          </div>
+          <div class="board-line hot">
+            <span>에이전트·자동화</span>
+            <strong>90%</strong>
+          </div>
+          <p>오늘 목표: 멋진 AI 지식이 아니라, 내 업무 하나를 에이전트 업무로 바꾸는 관점.</p>
+        </aside>
+      </section>
+
+      <section id="solution" class="snap-section solution-section">
+        <div class="section-number">01</div>
+        <div class="section-copy">
+          <h2>솔루션부터: 마이크 켜고 주절주절 말하세요.</h2>
+          <p>
+            현재 상황, 원하는 것, 결과물 형태, 제한조건, 내가 아는 것, 모르는 것, 용도, 계기,
+            나의 정체와 목적을 최대한 끄집어낸 뒤 마지막에 이렇게 말합니다.
+          </p>
+          <div class="quote-box">
+            “이걸 바탕으로 내가 바로 쓸 수 있는 프롬프트를 써줘.”
+          </div>
+        </div>
+        <div class="prompt-panel">
+          <div class="panel-head">
+            <h3>마이크 모드 대본</h3>
+            <button class="copy-btn" type="button" data-copy="mic-prompt">복사</button>
+          </div>
+          <pre id="mic-prompt">지금부터 내가 상황을 두서없이 말할게.
+내가 말한 내용을 바탕으로 좋은 프롬프트를 만들어줘.
+
+프롬프트에는 다음을 반드시 포함해줘:
+- 현재 상황
+- 원하는 결과
+- 결과물의 형태
+- 제한조건
+- 내가 아는 것과 모르는 것
+- 이 결과물을 쓰는 용도
+- 내가 이걸 하게 된 계기
+- 내 정체성과 목적
+
+부족한 정보가 있으면 먼저 질문해줘.</pre>
+        </div>
+      </section>
+
+      <section id="playbook" class="snap-section playbook-section">
+        <div class="section-number">02</div>
+        <div class="section-copy">
+          <h2>요약, 조사, 글쓰기는 “기준”을 먼저 먹이면 달라집니다.</h2>
+          <p>
+            좋은 모델은 이미 “잘 요약된 자료”와 “잘 정리된 문서”의 기준을 엄청나게 봤습니다.
+            그래도 사람마다 취향이 갈립니다. 그래서 매번 기준을 잡아주거나, 내 기준 프롬프트를 저장해야 합니다.
+          </p>
+        </div>
+        <div class="playbook-grid">
+          <article>
+            <span>요약 / 정리</span>
+            <h3>파일을 던져도 되지만 기준을 같이 던져라</h3>
+            <p>“짧게 요약” 대신 “의사결정용으로, 쟁점·결론·확인사항을 나눠서”라고 요청합니다.</p>
+          </article>
+          <article>
+            <span>자료 조사</span>
+            <h3>Deep Research + Perplexity + Grok/X</h3>
+            <p>사실확인은 리서치 도구, 출처 비교는 Perplexity, 민심과 실시간 반응은 Grok/X로 봅니다.</p>
+          </article>
+          <article>
+            <span>문서 작성</span>
+            <h3>잘 쓴 문서를 많이 먹여라</h3>
+            <p>보고서, 메일, 제안서 샘플을 주고 “이 기준에 맞춰 써라”라고 해야 말맛과 구조가 맞습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="agents" class="snap-section agent-section">
+        <div class="section-number">03</div>
+        <div class="section-copy">
+          <h2>업무 자동화는 채팅이 아니라 코딩 에이전트에서 진짜로 가능해집니다.</h2>
+          <p>
+            개발 에이전트는 개발자 전용 장난감이 아닙니다. 목표에 가까워지기 위해 코드를 쓰고,
+            도구를 실행하고, 파일을 만들고, 검증까지 하는 실행형 직원에 가깝습니다.
+          </p>
+        </div>
+        <div class="agent-ladder">
+          <div>
+            <strong>채팅</strong>
+            <span>답변을 받는다</span>
+          </div>
+          <div>
+            <strong>코덱스 / 클로드 코드</strong>
+            <span>파일을 만들고 실행한다</span>
+          </div>
+          <div>
+            <strong>루틴 / 자동화</strong>
+            <span>반복 업무를 맡긴다</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="terms" class="snap-section terms-section">
+        <div class="section-number">04</div>
+        <div class="section-copy">
+          <h2>비개발자용 단어 설명은 네 개면 충분합니다.</h2>
+        </div>
+        <div class="term-grid">
+          <article>
+            <h3>LLM</h3>
+            <p>말과 자료의 패턴을 이해하고 다음에 올 답을 만들어내는 거대한 언어 모델.</p>
+          </article>
+          <article>
+            <h3>모델</h3>
+            <p>GPT‑5.5, Claude Opus 4.7, Gemini 3.1 Pro처럼 실제로 생각하고 답하는 엔진.</p>
+          </article>
+          <article>
+            <h3>API</h3>
+            <p>앱, 문서, 업무 시스템이 모델을 불러다 쓰게 해주는 연결 통로.</p>
+          </article>
+          <article>
+            <h3>에이전트</h3>
+            <p>목표를 받고, 도구를 쓰고, 실행하고, 중간 결과를 확인하며 계속 움직이는 AI 작업자.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="models" class="snap-section models-section">
+        <div class="section-number">05</div>
+        <div class="section-copy">
+          <h2>서비스 비교는 공식 사실과 현장 사용감을 분리해서 봐야 합니다.</h2>
+          <p>2026-05-16 기준. 아래 평가는 강한 주관 그대로입니다. 싸우자는 게 아니라 빨리 고르자는 겁니다.</p>
+        </div>
+        <div class="model-table" role="table" aria-label="서비스와 모델 비교">
+          <div class="row head" role="row">
+            <span>도구</span>
+            <span>공식 사실</span>
+            <span>현장 사용감</span>
+          </div>
+          <div class="row" role="row">
+            <span>ChatGPT / GPT‑5.5</span>
+            <span>ChatGPT와 Codex에서 사용 가능. 코딩, 리서치, 데이터, 문서 작업에 강함.</span>
+            <span>만능. 비싸지만 돈값 함. 이미지와 음성 대화도 현재 제일 무난하게 좋음.</span>
+          </div>
+          <div class="row" role="row">
+            <span>Claude / Opus 4.7</span>
+            <span>코딩, 에이전트, 긴 작업, 고해상도 이미지 이해를 강화한 모델.</span>
+            <span>비싼데 자주 답답함. 그래도 개발할 때 개떡같이 말해도 알아듣는 편이라 많이 씀.</span>
+          </div>
+          <div class="row" role="row">
+            <span>Gemini / 3.1 Pro</span>
+            <span>Google의 고급 멀티모달 추론 모델. Workspace와 결합이 강함.</span>
+            <span>글을 잘 쓰고 말맛이 좋음. Google Workspace 쓰면 추가 지출 없이 시작하기 좋음.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="limits" class="snap-section limits-section">
+        <div class="section-number">06</div>
+        <div class="section-copy">
+          <h2>채팅으로만 쓰면 여기서 막힙니다.</h2>
+          <p>채팅은 답변을 줍니다. 에이전트는 파일을 만들고, 실행하고, 실패하면 고치고, 다시 확인합니다.</p>
+        </div>
+        <div class="limit-compare">
+          <article>
+            <h3>채팅 AI의 한계</h3>
+            <ul>
+              <li>결과를 직접 파일로 정리하지 않음</li>
+              <li>반복작업을 스스로 실행하지 않음</li>
+              <li>검증과 수정 루프를 사람이 계속 밀어야 함</li>
+            </ul>
+          </article>
+          <article class="active">
+            <h3>Codex / Claude Code가 여는 것</h3>
+            <ul>
+              <li>자료를 읽고 결과 파일을 생성</li>
+              <li>웹페이지, 스크립트, 자동화 도구를 직접 작성</li>
+              <li>테스트하고 실패를 고치며 목표에 접근</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="automation" class="snap-section automation-section">
+        <div class="section-number">07</div>
+        <div class="section-copy">
+          <h2>설문 답변 중 실제로 에이전트화할 수 있는 것들</h2>
+          <p>기안, 비교견적, 보고서, 시장조사, 데이터 정리, 엑셀 서식, 영어 메일 후속조치. 전부 “반복 가능한 업무 단위”로 바꿀 수 있습니다.</p>
+        </div>
+        <div class="automation-builder">
+          <label>
+            줄이고 싶은 업무
+            <input id="work-input" type="text" value="영어 메일 후속조치 정리">
+          </label>
+          <label>
+            결과물 형태
+            <input id="shape-input" type="text" value="요약, 확인사항, 답장 초안">
+          </label>
+          <button class="button primary" id="make-agent-task" type="button">에이전트 업무로 바꾸기</button>
+          <div class="agent-output">
+            <div class="panel-head">
+              <h3>에이전트에게 줄 업무</h3>
+              <button class="copy-btn" type="button" data-copy="agent-task-output">복사</button>
+            </div>
+            <pre id="agent-task-output">업무를 입력하면 여기에 에이전트용 작업 지시가 만들어집니다.</pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="security" class="snap-section security-section">
+        <div class="section-number">08</div>
+        <div class="section-copy">
+          <h2>기업에서 쓸 때 안전한 편이어도, 미숙한 사용은 위험합니다.</h2>
+          <p>
+            팀/엔터프라이즈 요금제는 개인 무료 계정보다 안전한 편입니다. 그래도 전체공개 링크,
+            고객정보 업로드, 서비스 파일 삭제 같은 사고는 사용자가 만들 수 있습니다.
+          </p>
+        </div>
+        <div class="security-rules">
+          <article>개인정보와 고객정보는 기본적으로 넣지 않는다</article>
+          <article>공유 링크는 공개 범위를 확인한다</article>
+          <article>자동화는 삭제 권한부터 막고 시작한다</article>
+          <article>중요 문서는 사람 검토를 마지막 단계로 둔다</article>
+        </div>
+      </section>
+
+      <section id="handout" class="handout-section">
+        <div class="handout-head">
+          <h2>모바일 핸드아웃</h2>
+          <p>참가자가 나중에 폰으로 다시 보는 요약 카드입니다.</p>
+        </div>
+        <div class="handout-tabs" role="tablist" aria-label="핸드아웃 카드">
+          <button class="handout-tab is-active" type="button" data-card="talk">말하기</button>
+          <button class="handout-tab" type="button" data-card="tools">도구선택</button>
+          <button class="handout-tab" type="button" data-card="terms">용어</button>
+          <button class="handout-tab" type="button" data-card="agent">에이전트</button>
+        </div>
+        <div class="handout-card is-active" data-card-panel="talk">
+          <h3>프롬프트는 쓰는 게 아니라 채굴하는 것</h3>
+          <p>마이크를 켜고 상황을 다 말한 뒤 “이걸 바탕으로 프롬프트를 써줘”라고 요청합니다.</p>
+        </div>
+        <div class="handout-card" data-card-panel="tools">
+          <h3>도구 선택 감각</h3>
+          <p>만능과 이미지와 코딩은 ChatGPT, 업무 연동과 개발 루프는 Claude, Workspace와 글맛은 Gemini.</p>
+        </div>
+        <div class="handout-card" data-card-panel="terms">
+          <h3>네 단어</h3>
+          <p>LLM은 엔진, 모델은 제품별 두뇌, API는 연결 통로, 에이전트는 실행하는 작업자.</p>
+        </div>
+        <div class="handout-card" data-card-panel="agent">
+          <h3>업무 자동화의 시작</h3>
+          <p>“답변해줘”가 아니라 “파일을 만들고 실행하고 확인해줘”라고 말하는 순간부터 다릅니다.</p>
+        </div>
+      </section>
+
+      <section class="source-section">
+        <h2>작은 출처</h2>
+        <p>최신 모델 정보는 빨리 바뀝니다. 이 자료는 2026-05-16 기준입니다.</p>
+        <ul>
+          <li><a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noreferrer">OpenAI GPT‑5.5</a></li>
+          <li><a href="https://platform.openai.com/docs/codex/overview" target="_blank" rel="noreferrer">OpenAI Codex</a></li>
+          <li><a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noreferrer">Anthropic Claude Opus 4.7</a></li>
+          <li><a href="https://deepmind.google/models/model-cards/gemini-3-1-pro/" target="_blank" rel="noreferrer">Google Gemini 3.1 Pro</a></li>
+          <li><a href="https://blog.google/products-and-platforms/products/workspace/gemini-workspace-updates-march-2026/" target="_blank" rel="noreferrer">Gemini for Workspace updates</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite">복사했습니다</div>
+    <script src="./app.js"></script>
+  </body>
+</html>
